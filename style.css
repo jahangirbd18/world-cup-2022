@@ -1,39 +1,178 @@
-h1 {
-    color: white;
-    font-family: 'Poppins';
-    font-weight: 700;
-    font-size: 40px;
-    padding-left: 10px;
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #E5E5E5;
 }
 
-.container {
-
-    border-radius: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
-    background-color: black;
-    width=80%;
+main {
     display: flex;
-    padding: 50px;
+    flex-direction: column;
+    align-items: center;
 }
 
-.header {
+.container1 {
+    background-color: white;
+    width: 870px;
+    height: 685;
+    padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
 
+}
 
-    border-color: green;
+/* .middle {
+    display: flex;
+} */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: black;
+    height: 230px;
+    width: 270px;
+}
+
+.sidebar button {
+    align-items: center;
+
+    margin: 20px;
+    border-radius: 10px;
+    width: 250px;
+    height: 40px;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+.top {
+    display: flex;
+    margin-bottom: 30px;
+    margin-right: 15px;
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    border-radius: 10px;
+    padding: 40px;
 }
 
 .player-1 {
+    display: flex;
 
-
-    border-color: brown;
-}
-
-#watch {
-    border-radius: 10px;
-    width: 150px;
-    height: 40px;
-    background-color: brown;
-    color: aliceblue;
+    top: 10px;
+    left: 300px;
+    height: 300px;
+    width: 300px;
 
 }
+
+.link-button {
+    text-decoration: none;
+    color: seashell;
+    background-color: orangered;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+}
+
+.link-text {
+    text-decoration: none;
+    color: orangered;
+
+}
+
+
+hr {
+    border: 1px solid #D1D1D1;
+}
+
+/*..........Blog Players ..............*/
+.blogs {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.blog img {
+    width: 260px;
+    height: 200px;
+}
+
+.blog-info {
+    margin-left: 16px;
+}
+
+.icon {
+    display: grid;
+    display: flex;
+    grid-gap: 15px;
+}
+
+.icon img {
+    width: 22px;
+    height: 22px;
+}
+
+
+/* 
+.featured-product {
+    display: flex;
+    grid-gap: 40px;
+} */
+
+.footer {
+    background: black;
+
+    width: 100%;
+
+}
+
+nav {
+    display: grid;
+    grid-template-columns: (6, 1fr);
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+nav a {
+
+    text-decoration: none;
+
+    margin-bottom: 30px;
+    color: white;
+
+}
+
+
+.social {
+    display: flex;
+    align-items: center;
+}
+
+.fab {
+    justify-content: center;
+    padding: 10px;
+    font-size: 30px;
+    width: 30px;
+    color: white;
+    background-color: rgb(97, 13, 13);
+    border-radius: 100px;
+}
+
+/*......... media Queries......... */
+/* Mobile Devices */
+@media only screen and (max-width:688px) {
+    .container {
+        width: 100px;
+    }
+}
+
+/* Tablet Devices */
+@media only screen and (min-width:688px) and(max-width:992px) {}
